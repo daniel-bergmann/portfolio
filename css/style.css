@@ -137,7 +137,6 @@ p {
 .flex-column img {
     width: 700px;
     height: 400px;
-    object-fit: fit;
 }
 
 .flex-columns .column-2 {
