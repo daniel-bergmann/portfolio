@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+
+
+/* Main stylings */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto 20px;
+    font-family: 'Tajawal', sans-serif;
+    color: #333;
+    background-color: rgb(251, 251, 251);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    font-size: 24px;
+}
+
+/* Navbar */
+
+.navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding-top: 10px;
+    margin: 40px;
+}
+
+.navbar .logo {
+    align-content: center;
+    justify-content: center;
+    margin: auto 0 auto 0px;
+    font-weight: 100;
+}
+
+.navbar .logo:hover {
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+    margin-right: 80px;
+}
+
+.navbar a {
+    padding: 10px 5px;
+    margin: 0 20px;
+    font-size: larger;
+}
+
+.navbar a:hover {
+    font-weight: 700;
+}
+
+/* Headline and opening */
+
+.headline {
+    display: flex;
+    align-items: center;
+    font-weight: 400; 
+    margin: 20px;
+    margin-top: 140px;
+    font-size: larger;
+    
+}
+
+.headline h6 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.headline img {
+    width: 100px;
+    height: 100px;
+    object-fit: fit;
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.headline img:hover {
+    opacity: 0.8;
+    width: 120px;
+    height: 120px;
+}
+
+.opening {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Blog posts */
+
+.blog {
+   margin-top: 30px;
+   height: auto;
+   width: auto;
+}
+
+.flex-columns .row {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+    height: 100%;
+}
+
+.flex-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+}
+
+.flex-columns h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.flex-columns h4 {
+    margin-bottom: 10px;
+}
+
+.flex-columns p {
+    margin: 20px 0;
+}
+
+.blog-post {
+    color:rgba(0, 0, 0, 0.8);
+}
+
+.blog p {
+    margin-right: 400px;
+   margin-left: 100px;
+}
+
+/* Button styling */
+
+button {
+    margin: 20px;
+    padding: 5px;
+    background-color: rgb(251, 251, 251);
+    border: none;
+    font-size: larger;
+    border-bottom: black solid 1px;
+}
+
+button:hover {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* Centering of elements in the portfolio section */
+
+.portfolio-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 100px
+}
+
+/* portfolio site styles */
+
+.underline {
+    border-bottom: black solid 3px;
+    padding: 5px;
+}
+
+.image-portfolio-fit {
+    width: 700px;
+    height: 400px;
+    object-fit: fit;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0 0 0;
+    margin: 5px 0 0 0;  
+    border-top: 1px solid #333;
+    font-size: 25px;
+}
+
+footer .social a i {
+    font-size: 50px;
+    padding: 20px;
+}
+
+footer h6 {
+    padding: 20px 0 0 0;
+    margin: 10px 0 0 0; 
+}
+
+footer a:hover {
+    opacity: 0.6;
+}
+
+/* For Javascript */
+
+/* Read more function for blog page */
+
+#more {
+    display: none;
+}
+
+#more2 {
+    display: none;
+}
+
+
+/* Rotating image */
+
+#selfie {
+    width: 6vw;
+    max-width: auto;
+    height: auto;
+}
+
+/* Media queries */
+
+@media(max-width: 768px) {
+    
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        justify-content: center;
+        align-content: center;
+        flex-flow: column;
+        padding-top: 70px;
+        padding-right: 40px;
+        margin-left: 0;
+        margin-right: 0px;
+        
+    }
+
+    .navbar .logo {
+        margin: auto;
+        width: auto;
+    }
+
+    .navbar ul {
+        margin: auto;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        padding: 10px;
+        
+    }
+
+    .navbar ul li {
+        padding: 15px;
+        border-bottom: 1px grey dotted;
+    }
+
+    .headline {
+        flex-flow: column;
+        margin-top: 220px;
+        font-size: 40px;
+        justify-content: center;
+        align-content: center;
+        
+    }
+
+    .headline img {
+        display: none;
+    }
+
+    /* The index page and blog*/
+
+    .blog {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .blog img {
+       flex: 100%;
+       width: 60%;
+       max-width: 100%; 
+    }
+
+    .column img {
+        height: 400px;
+    }
+
+    .blog p {
+        margin: auto;
+    }
+
+    .blog img {
+        width: 100%;
+    }
+
+    /* The portfolio page */
+
+    .column-2 p {
+        margin: 0 20px;
+    }
+    
+  }
