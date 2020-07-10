@@ -70,6 +70,22 @@ window.addEventListener("scroll", function() {
             i=0;  
         }
     }
+
+    var i=0;
+    function read4(){
+        if(!i){
+            document.getElementById("more4").style.display = "inline";
+            document.getElementById("dots4").style.display = "none";
+            document.getElementById("read4").innerHTML = "See Less";
+            i=1;
+        }
+        else{
+            document.getElementById("more4").style.display = "none";
+            document.getElementById("dots4").style.display = "inline";
+            document.getElementById("read4").innerHTML = "Read more";
+            i=0;  
+        }
+    }
     
     
 
