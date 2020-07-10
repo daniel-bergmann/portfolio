@@ -58,15 +58,15 @@ window.addEventListener("scroll", function() {
         var i=0;
     function read3(){
         if(!i){
-            document.getElementsByClassName("more3").style.display = "inline";
-            document.getElementsByClassName("dots3").style.display = "none";
-            document.getElementsByClassName("read3").innerHTML = "See Less";
+            document.getElementsById("more3").style.display = "inline";
+            document.getElementsById("dots3").style.display = "none";
+            document.getElementsById("read3").innerHTML = "See Less";
             i=1;
         }
         else{
-            document.getElementsByClassName("more3").style.display = "none";
-            document.getElementsByClassName("dots3").style.display = "inline";
-            document.getElementsByClassName("read3").innerHTML = "Read more";
+            document.getElementsById("more3").style.display = "none";
+            document.getElementsById("dots3").style.display = "inline";
+            document.getElementsById("read3").innerHTML = "Read more";
             i=0;  
         }
     }
