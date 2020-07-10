@@ -55,7 +55,7 @@ function read2() {
 
   //   Article 3
 
-function read2() {
+function read3() {
     var dots = document.getElementById("dots3");
     var moreText = document.getElementById("more3");
     var btnText = document.getElementById("read3");
