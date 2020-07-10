@@ -22,57 +22,18 @@ window.addEventListener("scroll", function() {
     var i=0;
     function read(){
         if(!i){
-            document.getElementById("more").style.display = "inline";
-            document.getElementById("dots").style.display = "none";
-            document.getElementById("read").innerHTML = "See Less";
+            document.getElementsByClassName("more").style.display = "inline";
+            document.getElementsByClassName("dots").style.display = "none";
+            document.getElementsByClassName("read").innerHTML = "See Less";
             i=1;
         }
         else{
-            document.getElementById("more").style.display = "none";
-            document.getElementById("dots").style.display = "inline";
-            document.getElementById("read").innerHTML = "Read more";
+            document.getElementsByClassName("more").style.display = "none";
+            document.getElementsByClassName("dots").style.display = "inline";
+            document.getElementsByClassName("read").innerHTML = "Read more";
             i=0;  
         }
     }
-
-    // Article 2
-
-    var i=0;
-    function read2(){
-        if(!i){
-            document.getElementById("more2").style.display = "inline";
-            document.getElementById("dots2").style.display = "none";
-            document.getElementById("read2").innerHTML = "See Less";
-            i=1;
-        }
-        else{
-            document.getElementById("more2").style.display = "none";
-            document.getElementById("dots2").style.display = "inline";
-            document.getElementById("read2").innerHTML = "Read more";
-            i=0;
-        }
-    }
-
-        // Article 3
-
-        var i=0;
-    function read3(){
-        if(!i){
-            document.getElementsById("more3").style.display = "inline";
-            document.getElementsById("dots3").style.display = "none";
-            document.getElementsById("read3").innerHTML = "See Less";
-            i=1;
-        }
-        else{
-            document.getElementsById("more3").style.display = "none";
-            document.getElementsById("dots3").style.display = "inline";
-            document.getElementsById("read3").innerHTML = "Read more";
-            i=0;  
-        }
-    }
-    
-    
-
 
 // Other JS
 
