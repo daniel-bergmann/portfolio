@@ -58,31 +58,15 @@ window.addEventListener("scroll", function() {
         var i=0;
     function read3(){
         if(!i){
-            document.getElementById("more3").style.display = "inline";
-            document.getElementById("dots3").style.display = "none";
-            document.getElementById("read3").innerHTML = "See Less";
+            document.getElementsByClassName("more3").style.display = "inline";
+            document.getElementsByClassName("dots3").style.display = "none";
+            document.getElementsByClassName("read3").innerHTML = "See Less";
             i=1;
         }
         else{
-            document.getElementById("more3").style.display = "none";
-            document.getElementById("dots3").style.display = "inline";
-            document.getElementById("read3").innerHTML = "Read more";
-            i=0;  
-        }
-    }
-
-    var i=0;
-    function read4(){
-        if(!i){
-            document.getElementById("more4").style.display = "inline";
-            document.getElementById("dots4").style.display = "none";
-            document.getElementById("read4").innerHTML = "See Less";
-            i=1;
-        }
-        else{
-            document.getElementById("more4").style.display = "none";
-            document.getElementById("dots4").style.display = "inline";
-            document.getElementById("read4").innerHTML = "Read more";
+            document.getElementsByClassName("more3").style.display = "none";
+            document.getElementsByClassName("dots3").style.display = "inline";
+            document.getElementsByClassName("read3").innerHTML = "Read more";
             i=0;  
         }
     }
