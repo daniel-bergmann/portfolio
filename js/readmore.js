@@ -19,21 +19,21 @@ window.addEventListener("scroll", function() {
 
 // Article 1
 
-    var i=0;
-    function read(){
-        if(!i){
-            document.getElementsByClassName("more").style.display = "inline";
-            document.getElementsByClassName("dots").style.display = "none";
-            document.getElementsByClassName("read").innerHTML = "See Less";
-            i=1;
-        }
-        else{
-            document.getElementsByClassName("more").style.display = "none";
-            document.getElementsByClassName("dots").style.display = "inline";
-            document.getElementsByClassName("read").innerHTML = "Read more";
-            i=0;  
-        }
+function read() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("read");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
     }
+  }
 
 // Other JS
 

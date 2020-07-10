@@ -240,8 +240,8 @@ footer a:hover {
 
 /* Read more function for blog page */
 
-.more {
-    /* display: none; */
+#more {
+    display: none;
 }
 
 
