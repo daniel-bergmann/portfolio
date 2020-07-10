@@ -19,7 +19,6 @@ window.addEventListener("scroll", function() {
 
 // Article 1
 
-
     var i=0;
     function read(){
         if(!i){
@@ -36,7 +35,7 @@ window.addEventListener("scroll", function() {
         }
     }
 
-// Article 2
+    // Article 2
 
     var i=0;
     function read2(){
@@ -53,6 +52,26 @@ window.addEventListener("scroll", function() {
             i=0;
         }
     }
+
+        // Article 3
+
+        var i=0;
+        function read3(){
+            if(!i){
+                document.getElementById("more3").style.display = "inline";
+                document.getElementById("dots3").style.display = "none";
+                document.getElementById("read3").innerHTML = "See Less";
+                i=1;
+            }
+            else{
+                document.getElementById("more3").style.display = "none";
+                document.getElementById("dots3").style.display = "inline";
+                document.getElementById("read3").innerHTML = "Read more";
+                i=0;
+            }
+        }
+    
+    
 
 
 // Other JS
