@@ -260,6 +260,12 @@ footer a:hover {
     display: none;
 }
 
+.podcast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Rotating image */
 
