@@ -15,6 +15,19 @@ window.addEventListener("scroll", function() {
 });
 
 
+// load more content button on the bottom of the page
+
+$(function(){
+  $(".read-more").slice(0, 3).show(); // select the first ten
+  $("#load").click(function(e){ // click event for load more
+      e.preventDefault();
+      $(".read-more:hidden").slice(0, 3).show(); // select next 10 hidden divs and show them
+      if($(".read-more:hidden").length == 0){ // check if any hidden divs still exist
+          alert("I'm glad you like my blog, have a great day!"); // alert if there are none left
+      }
+  });
+});
+
 // Read more read less toggle switch for articles
 
 // Article 1
