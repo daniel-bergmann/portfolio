@@ -16,6 +16,7 @@ window.addEventListener("scroll", function() {
 
 
 // load more content button on the bottom of the page
+// It uses Jquery
 
 $(function(){
   $(".read-more").slice(0, 3).show(); // select the first ten
