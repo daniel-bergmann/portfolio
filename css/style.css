@@ -290,18 +290,7 @@ display: none;
 .load-more-button:hover {
     background-color: rgb(224, 195, 195);
 }
-
-.hide {
-    display: none;
-  }
   
-  .myDIV:hover + .hide {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      color: black;
-      padding-top: 10px;
-  }
 
 
 
