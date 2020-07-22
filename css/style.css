@@ -257,6 +257,22 @@ footer a:hover {
     align-items: center;
     justify-content: center;
     margin: auto 100px;
+    padding: 10px 0;
+}
+
+.tech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    font-size: 20px;
+    padding: 10px 0;
+    
+}
+
+.fab {
+    font-size: 50px;
+    padding: 10px 0
 }
 
 
@@ -385,7 +401,7 @@ display: none;
         align-items: center;
         justify-content: center;
         margin: auto;
-        padding: 20px 0;
+        padding: 10px 0;
     }
     
   }
