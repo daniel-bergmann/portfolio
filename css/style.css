@@ -248,7 +248,7 @@ footer a:hover {
 
 /* Read more function for blog page */
 
-#more, #more2, #more3, #more4, #more5, #more6  {
+#more, #more2, #more3, #more4, #more5, #more6, #more7  {
     display: none;
 }
 
@@ -271,8 +271,9 @@ footer a:hover {
 }
 
 .fab {
-    font-size: 50px;
-    padding: 10px 0
+    font-size: 90px;
+    padding: 10px 0;
+    text-align: center;
 }
 
 

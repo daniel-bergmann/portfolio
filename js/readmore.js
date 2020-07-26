@@ -24,7 +24,7 @@ $(function(){
       e.preventDefault();
       $(".read-more:hidden").slice(0, 3).show(); // select next 10 hidden divs and show them
       if($(".read-more:hidden").length == 0){ // check if any hidden divs still exist
-          alert("I'm glad you like my blog, have a great day!"); // alert if there are none left
+          alert("That's All Folks!"); // alert if there are none left
       }
   });
 });
@@ -138,4 +138,22 @@ function read5() {
         moreText.style.display = "inline";
       }
     }
+
+        //   Article 7
+
+        function read7() {
+          var dots = document.getElementById("dots7");
+          var moreText = document.getElementById("more7");
+          var btnText = document.getElementById("read7");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+          }
+        }
 
