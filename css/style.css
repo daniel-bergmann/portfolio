@@ -248,7 +248,7 @@ footer a:hover {
 
 /* Read more function for blog page */
 
-#more, #more2, #more3, #more4, #more5, #more6, #more7  {
+#more, #more2, #more3  {
     display: none;
 }
 

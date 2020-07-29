@@ -29,7 +29,7 @@ $(function(){
   });
 });
 
-// Read more read less toggle switch for articles
+// Read more read less toggle button for the first 3 articles that appear on the frontpage blog
 
 // Article 1
 
@@ -85,75 +85,4 @@ function read3() {
     }
   }
 
-  //   Article 4
-
-  function read4() {
-    var dots = document.getElementById("dots4");
-    var moreText = document.getElementById("more4");
-    var btnText = document.getElementById("read4");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less";
-      moreText.style.display = "inline";
-    }
-  }
-
-    //   Article 5
-
-function read5() {
-  var dots = document.getElementById("dots5");
-  var moreText = document.getElementById("more5");
-  var btnText = document.getElementById("read5");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
-
-    //   Article 6
-
-    function read6() {
-      var dots = document.getElementById("dots6");
-      var moreText = document.getElementById("more6");
-      var btnText = document.getElementById("read6");
-    
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
-    }
-
-        //   Article 7
-
-        function read7() {
-          var dots = document.getElementById("dots7");
-          var moreText = document.getElementById("more7");
-          var btnText = document.getElementById("read7");
-        
-          if (dots.style.display === "none") {
-            dots.style.display = "inline";
-            btnText.innerHTML = "Read more";
-            moreText.style.display = "none";
-          } else {
-            dots.style.display = "none";
-            btnText.innerHTML = "Read less";
-            moreText.style.display = "inline";
-          }
-        }
-
+ // End of read more read less toggle button
